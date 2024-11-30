@@ -36,7 +36,7 @@ const Analytics = ({ transactions }) => {
     .filter((item) => item.transactionType === "expense")
     .reduce((acc, transaction) => acc + transaction.amount, 0);
 
-  const TurnOverIncomePercent = (totalTurnOverIncome / totalTurnOver) * 100;
+  const TurnOverIncomePercent = ((totalTurnOverIncome -totalTurnOverExpense )/ totalTurnOver) * 100;
   const TurnOverExpensePercent = (totalTurnOverExpense / totalTurnOver) * 100;
 
   const categories = [
