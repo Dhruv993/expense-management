@@ -19,7 +19,7 @@ const Analytics = ({ transactions }) => {
   );
 
   let totalIncomePercent =
-    (totalIncomeTransactions.length / TotalTransactions) * 100;
+    (totalIncomeTransactions.length / totalIncomeTransactions) * 100;
   let totalExpensePercent =
     (totalExpenseTransactions.length / TotalTransactions) * 100;
 
